@@ -1,0 +1,24 @@
+get:
+http://localhost:5000/profesores
+
+delete: 
+http://localhost:5000/profesores/eliminar/0002
+
+put(modificar): http://localhost:5000/profesores/modificar/0002
+
+{
+  "nombre": "Nuevo Nombre",
+  "correo": "nuevoemail@example.com",
+  "direccion": "Nueva Dirección"
+}
+
+
+post(anadir): 
+http://localhost:5000/profesores/registrar
+
+{
+  "id": 1,
+  "nombre": "Juan Pérez",
+  "correo": "juan.perez@example.com",
+  "direccion": "Calle Falsa 123"
+}
